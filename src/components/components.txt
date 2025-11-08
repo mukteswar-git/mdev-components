@@ -1,0 +1,132 @@
+🎨 Essential Component Library
+
+  📦 Phase 1: Foundation (Week 1)
+  ├─ Container/Section ⚡ (needed for everything)
+  ├─ Button ⚡
+  ├─ Input ⚡
+  ├─ Card ⚡
+  ├─ Navbar
+  ├─ Footer
+  └─ Alert/Toast
+
+  📦 Phase 2: Forms (Week 2)
+  ├─ Textarea
+  ├─ Select (native)
+  ├─ Checkbox
+  ├─ Radio
+  ├─ Toggle
+  ├─ Form validation utilities
+  └─ File Upload (optional)
+
+  📦 Phase 3: Feedback & Navigation (Week 3)
+  ├─ Modal ⚡
+  ├─ Dropdown ⚡ (moved up - needed for Select)
+  ├─ Tooltip
+  ├─ Badge
+  ├─ Tabs
+  └─ Breadcrumbs
+
+  📦 Phase 4: Data Display (Week 4)
+  ├─ Table
+  ├─ Grid
+  ├─ Avatar
+  ├─ Accordion
+  ├─ Pagination
+  └─ Skeleton Loader
+
+  📦 Phase 5: Advanced & Marketing (Week 5+)
+  ├─ Search + Filters
+  ├─ Hero Section
+  ├─ Pricing Card
+  ├─ Testimonial
+  ├─ FAQ
+  └─ CTA Banner
+
+
+🅰️ 1. CVA (class-variance-authority) — Best for Reusable UI Library
+
+This is the industry standard for variant-driven systems (used by Shadcn, PandaCSS, etc.).
+
+Example:
+npm install class-variance-authority clsx
+
+// utils/cn.js
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+
+// components/ui/button.jsx
+import { cva } from "class-variance-authority";
+import { cn } from "@/utils/cn";
+import { forwardRef } from "react";
+
+const buttonVariants = cva(
+  // Base styles - always applied
+  "inline-flex items-center justify-center font-semibold rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  {
+    variants: {
+      variant: {
+        primary: "bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-500",
+        secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-500",
+        ghost: "bg-transparent hover:bg-gray-100 text-gray-800",
+        destructive: "bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-500",
+        outline: "border-2 border-gray-300 bg-transparent hover:bg-gray-100",
+      },
+      size: {
+        sm: "h-9 px-3 text-sm",
+        md: "h-10 px-4 text-base",
+        lg: "h-11 px-6 text-lg",
+        icon: "h-10 w-10", // Square button for icons
+      },
+    },
+    compoundVariants: [
+      // Special case: ghost + sm = tighter padding
+      {
+        variant: "ghost",
+        size: "sm",
+        className: "px-2",
+      },
+    ],
+    defaultVariants: {
+      variant: "primary",
+      size: "md",
+    },
+  }
+);
+
+export const Button = forwardRef(
+  ({ variant, size, className, disabled, children, ...props }, ref) => {
+    return (
+      <button
+        ref={ref}
+        className={cn(buttonVariants({ variant, size }), className)}
+        disabled={disabled}
+        {...props}
+      >
+        {children}
+      </button>
+    );
+  }
+);
+
+Button.displayName = "Button";
+
+
+✅ Then just use:
+
+<Button>Primary</Button>
+<Button variant="secondary" size="sm">Cancel</Button>
+<Button variant="ghost" state="loading">Loading...</Button>
+
+
+💡 Why this is great:
+
+Super consistent
+
+Fast to extend (state, intent, tone, etc.)
+
+No need to remember Tailwind classes
+
+
