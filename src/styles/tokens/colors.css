@@ -86,6 +86,11 @@
    --surface-overlay: var(--gray-darker);          /* Modals, drawers, tooltips */
    --surface-elevated: var(--blue-light);          /* Floating elements (dropdowns, popovers) */
 
+   /* Neutral / Gray surfaces for non-primary */
+   --surface-neutral:   var(--gray-lightest);   /* default for secondary/ghost */
+   --surface-neutral-hover:  var(--gray-lighter); /* hover for secondary/ghost */
+   --surface-neutral-active: var(--gray-light); /* pressed — keep light enough for black text */
+
    /* --- Interactive Surfaces --- */
    --surface-interactive: var(--blue-default-light);        /* Clickable areas */
    --surface-interactive-hover: var(--blue-dark);           /* Hover state */
@@ -97,6 +102,7 @@
    --surface-success-muted: var(--emerald-lighter); /* Subtle success BG */
    --surface-error: var(--red-lightest);           /* Error banners/alerts */
    --surface-error-muted: var(--red-lighter);      /* Subtle error BG */
+   --surface-error-active: var(--red-default-light)
    --surface-warning: var(--amber-lightest);       /* Warning banners/alerts */
    --surface-warning-muted: var(--amber-lighter);  /* Subtle warning BG */
    --surface-info: var(--sky-lightest);            /* Info banners/alerts */
@@ -244,6 +250,7 @@
   --surface-success-muted: var(--emerald-darker);
   --surface-error: var(--red-darkest);
   --surface-error-muted: var(--red-darker);
+  --surface-error-active: var(--red-default-dark);
   --surface-warning: var(--amber-darkest);
   --surface-warning-muted: var(--amber-darker);
   --surface-info: var(--sky-darkest);
