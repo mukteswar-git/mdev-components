@@ -14,25 +14,29 @@ import cn from "../../utils/cn.js";
  */
 
 const containerVariants = cva(
-  // Base: width + horizontal responsive padding + center alignment
-  "mx-auto w-full transition-colors duration-200 px-4 sm:px-6 lg:px-8",
+  "w-full",
   {
     variants: {
       variant: {
-        default: "", // No vertical padding for default
-        section: "py-16 sm:py-20 lg:py-24", // Large vertical padding
-        card: "rounded-2xl border border-gray-200 bg-white shadow-sm p-6", // Matches spec
-        fluid: "max-w-none px-4 sm:px-6 lg:px-8", // Always full width but keeps padding
+        default: "mx-auto px-4 sm:px-6 lg:px-8 bg-(--surface-base)",
+
+        section: "mx-auto px-4 sm:px-6 lg:px-8 bg-(--surface-base) py-16 sm:py-20 lg:py-24",
+
+        card: "mx-auto rounded-(--radius-2xl) border border-(--border-default) shadow-(--shadow-sm) bg-(--surface-base) p-6",
+
+        fluid: "w-full !max-w-none bg-(--surface-base)", // full width
       },
+
       size: {
         sm: "max-w-screen-sm",
         md: "max-w-screen-md",
         lg: "max-w-screen-lg",
         xl: "max-w-screen-xl",
         "2xl": "max-w-screen-2xl",
-        full: "max-w-full",
+        full: "max-w-none",
       },
     },
+
     defaultVariants: {
       variant: "default",
       size: "xl",

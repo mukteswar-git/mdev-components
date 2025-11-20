@@ -13,10 +13,4 @@
   --radius-xl: 1.5rem;      /* 24px */
   --radius-2xl: 2rem;       /* 32px */
   --radius-full: 9999px;    /* Pills/circles */
-  
-  /* Border Widths */
-  --border-width-thin: 0.5px;
-  --border-width-default: 1px;
-  --border-width-thick: 2px;
-  --border-width-heavy: 4px;
 }
