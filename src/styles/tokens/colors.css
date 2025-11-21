@@ -102,7 +102,7 @@
    --surface-success-muted: var(--emerald-lighter); /* Subtle success BG */
    --surface-error: var(--red-lightest);           /* Error banners/alerts */
    --surface-error-muted: var(--red-lighter);      /* Subtle error BG */
-   --surface-error-active: var(--red-default-light)
+   --surface-error-active: var(--red-default-light);
    --surface-warning: var(--amber-lightest);       /* Warning banners/alerts */
    --surface-warning-muted: var(--amber-lighter);  /* Subtle warning BG */
    --surface-info: var(--sky-lightest);            /* Info banners/alerts */
@@ -238,6 +238,11 @@
   --surface-raised: var(--gray-darker);
   --surface-overlay: var(--gray-dark);
   --surface-elevated: var(--gray-default-dark);
+
+  /* Neutral / Gray surfaces for non-primary */
+   --surface-neutral:   var(--gray-darker);   /* default for secondary/ghost */
+   --surface-neutral-hover:  var(--gray-dark); /* hover for secondary/ghost */
+   --surface-neutral-active: var(--gray-light); /* pressed — keep light enough for black text */
 
   /* Interactive */
   --surface-interactive: var(--blue-default-dark);

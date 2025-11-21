@@ -1,0 +1,12 @@
+export { PlusIcon } from "./plus.js";
+export { ArrowRightIcon } from "./arrow-right.js";
+export { ArrowLeftIcon } from "./arrow-left.js";
+export { CheckIcon } from "./check.js";
+export { XMarkIcon } from "./x-mark.js";
+export { SearchIcon } from "./search.js";
+export { UploadIcon } from "./upload.js";
+export { DownloadIcon } from "./download.js";
+export { MenuIcon } from "./menu.js";
+export { InfoIcon } from "./information-circle.js";
+export { WarningIcon } from "./exclamation-triangle.js";
+export { ErrorIcon } from "./exclamation-circle.js";
