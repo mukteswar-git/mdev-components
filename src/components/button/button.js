@@ -38,7 +38,6 @@ export const buttonVariants = cva(
           "bg-(--surface-error) text-(--text-on-error) hover:bg-(--surface-error-muted) active:bg-(--surface-error-active) active:text-(--text-on-interactive) focus-visible:ring-(--border-error)"
       },
 
-      /* ⭐ Correct iconOnly variant */
       iconOnly: {
         true: "w-10 h-10 p-0 text-[0] !gap-0 flex items-center justify-center rounded-full",
       },

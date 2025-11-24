@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body class="bg-(--surface-base)">
-<!-- class="bg-(--surface-base)" -->
-  <!-- Theme Toggle Button -->
-  <div class="flex justify-end p-4">
-    <button id="theme-toggle"
-      class="p-2 rounded bg-gray-200 dark:bg-gray-700">
-      Toggle Theme
-    </button>
-  </div>
+  <body class=" bg-amber-500">
+    <!-- Theme Toggle Button -->
+    <div class="flex justify-end p-4">
+      <button id="theme-toggle"
+        class="p-2 rounded bg-gray-200 dark:bg-gray-700">
+        Toggle Theme
+      </button>
+    </div>
 
-  <!-- Container Components -->
-  <div id="container" class="mt-20 space-y-20 hidden"></div>
+    <!-- Container Components -->
+    <div id="container" class="mt-20 space-y-20 hidden"></div>
 
-  <!-- Button Components -->
-  <div id="button-demo" class="p-6 flex flex-wrap gap-4"></div>
+    <!-- Button Components -->
+    <div id="button-demo" class="p-6 hidden flex-wrap gap-4"></div>
 
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <!-- Input Components -->
+    <div class="flex justify-center">
+      <div id="input-demo" class="p-6 space-y-6 md:w-2/3 lg:w-1/2"></div>
+    </div>
+
+    <div id="signup-form"></div>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
