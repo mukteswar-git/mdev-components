@@ -1,50 +1,57 @@
 import { renderInput } from "./input.js";
 import { PlusIcon } from "../icons/index.js";
 
-// DEFAULT
-renderInput("#input-demo", { placeholder: "Enter your name" });
+/* -------------------------------------------------------
+ * BASIC VARIANTS
+ * ------------------------------------------------------*/
 
-// ERROR
 renderInput("#input-demo", {
-  variant: "error",
-  placeholder: "Invalid email",
+  placeholder: "Default Input",
 });
 
-// SUCCESS
+renderInput("#input-demo", {
+  variant: "error",
+  placeholder: "Error Input",
+});
+
 renderInput("#input-demo", {
   variant: "success",
-  placeholder: "Looks good!",
+  placeholder: "Success Input",
 });
 
-// DISABLED
 renderInput("#input-demo", {
   variant: "disabled",
-  placeholder: "Disabled",
   disabled: true,
+  placeholder: "Disabled Input",
   iconLeft: PlusIcon(),
 });
 
-// LEFT ICON
+
+/* -------------------------------------------------------
+ * ICON INPUTS
+ * ------------------------------------------------------*/
+
 renderInput("#input-demo", {
-  placeholder: "Email",
+  placeholder: "Left Icon",
   iconLeft: PlusIcon(),
 });
 
-// RIGHT ICON
 renderInput("#input-demo", {
-  variant: "error",
-  placeholder: "Search...",
+  placeholder: "Right Icon",
   iconRight: PlusIcon(),
 });
 
-// BOTH ICONS
 renderInput("#input-demo", {
-  placeholder: "Username",
+  placeholder: "Both Icons",
   iconLeft: PlusIcon(),
   iconRight: PlusIcon(),
 });
 
-// SIZES
+
+/* -------------------------------------------------------
+ * SIZES
+ * ------------------------------------------------------*/
+
 renderInput("#input-demo", {
   size: "sm",
   placeholder: "Small Input",
@@ -58,20 +65,4 @@ renderInput("#input-demo", {
 renderInput("#input-demo", {
   size: "lg",
   placeholder: "Large Input",
-});
-
-renderInput("#signup-form", {
-  placeholder: "Full Name"
-});
-
-renderInput("#signup-form", {
-  placeholder: "Email",
-  type: "email",
-  variant: "error"
-});
-
-renderInput("#signup-form", {
-  placeholder: "Password",
-  type: "password",
-  size: "lg"
 });

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-  <body class=" bg-amber-500">
+  <body class="bg-(--surface-base)">
     <!-- Theme Toggle Button -->
     <div class="flex justify-end p-4">
       <button id="theme-toggle"
@@ -21,12 +21,17 @@
     <div id="button-demo" class="p-6 hidden flex-wrap gap-4"></div>
 
     <!-- Input Components -->
-    <div class="flex justify-center">
+    <div class="hidden justify-center">
       <div id="input-demo" class="p-6 space-y-6 md:w-2/3 lg:w-1/2"></div>
     </div>
 
-    <div id="signup-form"></div>
-
+    <!-- Card Components -->
+    <div class="hidden">
+      <div id="card-elevated" class="p-10 flex justify-center items-start gap-10 flex-wrap"></div>
+      <div id="card-outline" class="p-10 flex justify-center items-start gap-10 flex-wrap"></div>
+      <div id="card-filled" class="p-10 flex justify-center items-start gap-10 flex-wrap"></div>
+      <div id="card-subtle" class="p-10 flex justify-center items-start gap-10 flex-wrap"></div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

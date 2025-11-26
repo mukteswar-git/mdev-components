@@ -1,4 +1,4 @@
-import "./components/container/use-container.js";
-import "./components/button/use-button.js";
-import "./components/input/use-input.js";
+import "./components/container/container.demo.js";
+import "./components/button/button.demo.js";
 import "./components/input/input.demo.js";
+import "./components/card/card.demo.js"

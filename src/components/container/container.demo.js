@@ -1,4 +1,4 @@
-import { createContainer, renderContainer } from "../container/container.js";
+import { createContainer, renderContainer } from "./container.js";
 import { renderButton } from "../button/button.js";
 
 // 1️⃣ Create default container with a slot inside

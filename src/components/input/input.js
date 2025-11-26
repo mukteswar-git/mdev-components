@@ -63,7 +63,6 @@ export const inputVariants = cva(
   }
 );
 
-
 /* -------------------------------------------------------
  * 🧩 INPUT FIELD CLASS
  * ------------------------------------------------------*/
@@ -71,23 +70,26 @@ export const inputFieldClass =
   "w-full bg-transparent outline-none placeholder-(--text-muted) disabled:cursor-not-allowed";
 
 /* -------------------------------------------------------
- * 🏗️ CREATE INPUT COMPONENT
+ * 🧱 INPUT COMPONENT (like Card.js)
  * ------------------------------------------------------*/
-export function createInput({
+export default function Input({
   variant = "default",
   size = "md",
+  placeholder = "",
+  value = "",
+  disabled = false,
   iconLeft = null,
   iconRight = null,
   className = "",
-  attributes = {},
-  ...props
+  inputProps = {},
+  wrapperProps = {},
 } = {}) {
-
+  
   const wrapper = document.createElement("div");
 
   wrapper.className = cn(
     inputVariants({
-      variant,
+      variant: disabled ? "disabled" : variant,
       size,
       hasLeftIcon: !!iconLeft,
       hasRightIcon: !!iconRight,
@@ -95,35 +97,49 @@ export function createInput({
     className
   );
 
-  // ⭐ FIXED LEFT ICON
+  /* -------------------------
+   * LEFT ICON
+   * ------------------------ */
   if (iconLeft instanceof HTMLElement) {
     const left = document.createElement("span");
     left.className = "flex items-center text-(--icon-default)";
-    left.appendChild(iconLeft);  // ← Correct
+    left.appendChild(iconLeft);
     wrapper.appendChild(left);
   }
 
-  // Input Field
+  /* -------------------------
+   * INPUT FIELD
+   * ------------------------ */
   const input = document.createElement("input");
   input.className = inputFieldClass;
 
-  // Spread attributes
-  Object.entries(props).forEach(([key, value]) => {
-    input.setAttribute(key, value);
+  if (placeholder) input.placeholder = placeholder;
+  if (value) input.value = value;
+  if (disabled) input.disabled = true;
+
+  // Apply inputProps properly
+  Object.entries(inputProps).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      input.setAttribute(key, value);
+    }
   });
 
   wrapper.appendChild(input);
 
-  // ⭐ FIXED RIGHT ICON
+  /* -------------------------
+   * RIGHT ICON
+   * ------------------------ */
   if (iconRight instanceof HTMLElement) {
     const right = document.createElement("span");
     right.className = "flex items-center text-(--icon-default)";
-    right.appendChild(iconRight);  // ← Correct
+    right.appendChild(iconRight);
     wrapper.appendChild(right);
   }
 
-  // Wrapper attributes
-  Object.entries(attributes).forEach(([key, value]) => {
+  /* -------------------------
+   * WRAPPER PROPS
+   * ------------------------ */
+  Object.entries(wrapperProps).forEach(([key, value]) => {
     wrapper.setAttribute(key, value);
   });
 
@@ -135,21 +151,13 @@ export function createInput({
 /* -------------------------------------------------------
  * 🚀 RENDER INPUT
  * ------------------------------------------------------*/
-export function renderInput(target, options) {
-  const input = createInput(options);
-  const mountPoint =
-    typeof target === "string" ? document.querySelector(target) : target;
+export function renderInput(target, options = {}) {
+  const input = Input(options);
+  const mount =
+    typeof target === "string"
+      ? document.querySelector(target)
+      : target;
 
-  if (mountPoint) mountPoint.appendChild(input);
+  if (mount) mount.appendChild(input);
   return input;
 }
-
-/* -------------------------------------------------------
- * ✔ EXPORT
- * ------------------------------------------------------*/
-export default {
-  inputVariants,
-  inputFieldClass,
-  createInput,
-  renderInput,
-};

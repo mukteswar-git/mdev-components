@@ -1,10 +1,4 @@
-/* Tailwind Base */
 @import 'tailwindcss';
-
-/* =========================
-   🎨 Design System - Base Imports
-   Import all token files here
-   ========================= */
 
 /* Core Tokens */
 @import './tokens/colors.css';
@@ -13,3 +7,6 @@
 @import './tokens/shadows.css';
 @import './tokens/layout.css';
 @import './tokens/transitions.css';
+
+/* Components */
+@import './components.css';
