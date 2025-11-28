@@ -10,3 +10,5 @@ export { MenuIcon } from "./menu.js";
 export { InfoIcon } from "./information-circle.js";
 export { WarningIcon } from "./exclamation-triangle.js";
 export { ErrorIcon } from "./exclamation-circle.js";
+export { PhoneIcon } from "./phone.js";
+export { EmailIcon } from "./email.js";
