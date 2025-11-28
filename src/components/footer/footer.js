@@ -53,7 +53,7 @@ export default function Footer({
 
             <!-- Quick Links -->
             <div>
-              <h6>Quick Links</h6>
+              <h6 class="text-(--gray-lightest)">Quick Links</h6>
               <ul class="space-y-1 pl-4">
                 ${links.map((l) => `<li><a href="${l.href}">${l.label}</a></li>`).join("")}
               </ul>
@@ -64,11 +64,11 @@ export default function Footer({
         <!-- Bottom Row -->
         <div class="w-full mt-8 pt-4 border-t border-(--border-inverse)">
           <div class="flex flex-col md:flex-row items-center justify-between">
-            <p class="body-sm text-center md:text-left">&copy; ${year} ${brand}</p>
+            <p class="body-sm text-(--gray-light) text-center md:text-left">&copy; ${year} ${brand}</p>
 
             <div class="flex gap-4 flex-wrap md:justify-end">
-              <a href="#" class="body-sm hover:underline">Privacy Policy</a>
-              <a href="#" class="body-sm hover:underline">Terms & Conditions</a>
+              <a href="#" class="body-sm text-(--gray-light) no-underline hover:underline">Privacy Policy</a>
+              <a href="#" class="body-sm text-(--gray-light) no-underline hover:underline">Terms & Conditions</a>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Footer({
   phoneRow.append(contact.phone || "");
 
   const emailRow = footer.querySelector(".email-row");
-  emailRow.classList.add("items-start"); // Align icon & text top
+  emailRow.classList.add("items-start"); 
 
   const emailIcon = EmailIcon();
   emailIcon.classList.add("text-(--gray-lightest)");
@@ -95,7 +95,7 @@ export default function Footer({
 
   // WRAPPING FIX FOR TAILWIND v4+
   const emailText = document.createElement("span");
-  emailText.classList.add("wrap-anywhere");  // <-- THIS IS THE KEY
+  emailText.classList.add("max-sm:wrap-anywhere"); 
   emailText.textContent = contact.email || "";
   emailRow.appendChild(emailText);
 
