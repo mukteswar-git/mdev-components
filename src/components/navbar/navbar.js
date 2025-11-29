@@ -1,3 +1,11 @@
+/**
+ * MDev Components - MIT License
+ * © 2025 Mukteswar Tripathy
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this project.
+ */
+
 import { cva } from "class-variance-authority";
 import cn from "../../utils/cn.js";
 import { MenuIcon, XMarkIcon } from "../icons/index.js";
