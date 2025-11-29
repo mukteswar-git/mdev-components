@@ -12,3 +12,5 @@ export { WarningIcon } from "./exclamation-triangle.js";
 export { ErrorIcon } from "./exclamation-circle.js";
 export { PhoneIcon } from "./phone.js";
 export { EmailIcon } from "./email.js";
+export { CheckCircleIcon } from "./checkCircle.js";
+export { StarIcon } from "./star.js";

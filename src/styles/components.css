@@ -1,0 +1,6 @@
+/* Icon Utilities */
+.text-\(--text-error\)   { color: var(--text-error); }
+.text-\(--text-warning\) { color: var(--text-warning); }
+.text-\(--text-success\) { color: var(--text-success); }
+.text-\(--text-info\)    { color: var(--text-info); }
+.text-\(--text-feature\) { color: var(--text-feature); }

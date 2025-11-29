@@ -4,77 +4,77 @@
 
 /* 🧱 Base color mappings */
 @theme {
-  /* =========================
-     🩵 Blue
-     ========================= */
-  --blue-lightest: theme(colors.blue.50);
-  --blue-lighter: theme(colors.blue.100);
-  --blue-light: theme(colors.blue.400);
-  --blue-default-dark: theme(colors.blue.500);
-  --blue-default-light: theme(colors.blue.600);
-  --blue-dark: theme(colors.blue.700);
-  --blue-darker: theme(colors.blue.900);
-  --blue-darkest: theme(colors.blue.950);
+   /* =========================
+      🩵 Blue
+      ========================= */
+   --blue-lightest: theme(colors.blue.50);
+   --blue-lighter: theme(colors.blue.100);
+   --blue-light: theme(colors.blue.400);
+   --blue-default-dark: theme(colors.blue.500);
+   --blue-default-light: theme(colors.blue.600);
+   --blue-dark: theme(colors.blue.700);
+   --blue-darker: theme(colors.blue.900);
+   --blue-darkest: theme(colors.blue.950);
 
-  /* =========================
-     ⚫ Gray
-     ========================= */
-  --gray-lightest: theme(colors.gray.50);
-  --gray-lighter: theme(colors.gray.100);
-  --gray-light: theme(colors.gray.400);
-  --gray-default-dark: theme(colors.gray.500);
-  --gray-default-light: theme(colors.gray.600);
-  --gray-dark: theme(colors.gray.700);
-  --gray-darker: theme(colors.gray.900);
-  --gray-darkest: theme(colors.gray.950);
+   /* =========================
+      ⚫ Gray
+      ========================= */
+   --gray-lightest: theme(colors.gray.50);
+   --gray-lighter: theme(colors.gray.100);
+   --gray-light: theme(colors.gray.400);
+   --gray-default-dark: theme(colors.gray.500);
+   --gray-default-light: theme(colors.gray.600);
+   --gray-dark: theme(colors.gray.700);
+   --gray-darker: theme(colors.gray.900);
+   --gray-darkest: theme(colors.gray.950);
 
-  /* =========================
-     🔴 Red
-     ========================= */
-  --red-lightest: theme(colors.red.50);
-  --red-lighter: theme(colors.red.100);
-  --red-light: theme(colors.red.400);
-  --red-default-dark: theme(colors.red.500);
-  --red-default-light: theme(colors.red.600);
-  --red-dark: theme(colors.red.700);
-  --red-darker: theme(colors.red.900);
-  --red-darkest: theme(colors.red.950);
+   /* =========================
+      🔴 Red
+      ========================= */
+   --red-lightest: theme(colors.red.50);
+   --red-lighter: theme(colors.red.100);
+   --red-light: theme(colors.red.400);
+   --red-default-dark: theme(colors.red.500);
+   --red-default-light: theme(colors.red.600);
+   --red-dark: theme(colors.red.700);
+   --red-darker: theme(colors.red.900);
+   --red-darkest: theme(colors.red.950);
 
-  /* =========================
-     🟢 Emerald
-     ========================= */
-  --emerald-lightest: theme(colors.emerald.50);
-  --emerald-lighter: theme(colors.emerald.100);
-  --emerald-light: theme(colors.emerald.400);
-  --emerald-default-dark: theme(colors.emerald.500);
-  --emerald-default-light: theme(colors.emerald.600);
-  --emerald-dark: theme(colors.emerald.700);
-  --emerald-darker: theme(colors.emerald.900);
-  --emerald-darkest: theme(colors.emerald.950);
+   /* =========================
+      🟢 Emerald
+      ========================= */
+   --emerald-lightest: theme(colors.emerald.50);
+   --emerald-lighter: theme(colors.emerald.100);
+   --emerald-light: theme(colors.emerald.400);
+   --emerald-default-dark: theme(colors.emerald.500);
+   --emerald-default-light: theme(colors.emerald.600);
+   --emerald-dark: theme(colors.emerald.700);
+   --emerald-darker: theme(colors.emerald.900);
+   --emerald-darkest: theme(colors.emerald.950);
 
-  /* =========================
-     🩵 Sky
-     ========================= */
-  --sky-lightest: theme(colors.sky.50);
-  --sky-lighter: theme(colors.sky.100);
-  --sky-light: theme(colors.sky.400);
-  --sky-default-dark: theme(colors.sky.500);
-  --sky-default-light: theme(colors.sky.600);
-  --sky-dark: theme(colors.sky.700);
-  --sky-darker: theme(colors.sky.900);
-  --sky-darkest: theme(colors.sky.950);
+   /* =========================
+      🩵 Sky
+      ========================= */
+   --sky-lightest: theme(colors.sky.50);
+   --sky-lighter: theme(colors.sky.100);
+   --sky-light: theme(colors.sky.400);
+   --sky-default-dark: theme(colors.sky.500);
+   --sky-default-light: theme(colors.sky.600);
+   --sky-dark: theme(colors.sky.700);
+   --sky-darker: theme(colors.sky.900);
+   --sky-darkest: theme(colors.sky.950);
 
-  /* =========================
-     🟡 Amber
-     ========================= */
-  --amber-lightest: theme(colors.amber.50);
-  --amber-lighter: theme(colors.amber.100);
-  --amber-light: theme(colors.amber.400);
-  --amber-default-dark: theme(colors.amber.500);
-  --amber-default-light: theme(colors.amber.600);
-  --amber-dark: theme(colors.amber.700);
-  --amber-darker: theme(colors.amber.900);
-  --amber-darkest: theme(colors.amber.950);
+   /* =========================
+      🟡 Amber
+      ========================= */
+   --amber-lightest: theme(colors.amber.50);
+   --amber-lighter: theme(colors.amber.100);
+   --amber-light: theme(colors.amber.400);
+   --amber-default-dark: theme(colors.amber.500);
+   --amber-default-light: theme(colors.amber.600);
+   --amber-dark: theme(colors.amber.700);
+   --amber-darker: theme(colors.amber.900);
+   --amber-darkest: theme(colors.amber.950);
 
    /* =========================
       🧩 SURFACE TOKENS
@@ -100,13 +100,19 @@
    /* --- State Surfaces (Feedback) --- */
    --surface-success: var(--emerald-lightest);     /* Success banners/alerts */
    --surface-success-muted: var(--emerald-lighter); /* Subtle success BG */
+   --surface-success-active: var(--emerald-default-light);
    --surface-error: var(--red-lightest);           /* Error banners/alerts */
    --surface-error-muted: var(--red-lighter);      /* Subtle error BG */
    --surface-error-active: var(--red-default-light);
    --surface-warning: var(--amber-lightest);       /* Warning banners/alerts */
    --surface-warning-muted: var(--amber-lighter);  /* Subtle warning BG */
+   --surface-warning-active: var(--amber-default-light);
    --surface-info: var(--sky-lightest);            /* Info banners/alerts */
    --surface-info-muted: var(--sky-lighter);       /* Subtle info BG */
+   --surface-info-active: var(--sky-default-light);
+   --surface-feature: var(--gray-lightest);
+   --surface-feature-muted: var(--gray-lighter);
+   --surface-feature-active: var(--gray-darker);
 
    /* --- Input Surfaces --- */
    --surface-input: var(--blue-lightest);          /* Input field background */
@@ -156,6 +162,7 @@
    --text-on-error: var(--red-darker);            /* Text on error surface */
    --text-on-warning: var(--amber-darker);        /* Text on warning surface */
    --text-on-info: var(--sky-darker);             /* Text on info surface */
+   --text-on-feature: var(--gray-darker);
 
    /* --- Heading Text --- */
    --text-heading: var(--gray-darkest);           /* Main headings (h1-h6) */
@@ -233,139 +240,146 @@
    🌚 Dark Theme
    ========================= */
 [data-theme="dark"] {
-  /* Base Surfaces */
-  --surface-base: var(--gray-darkest);
-  --surface-raised: var(--gray-darker);
-  --surface-overlay: var(--gray-dark);
-  --surface-elevated: var(--gray-default-dark);
+   /* Base Surfaces */
+   --surface-base: var(--gray-darkest);
+   --surface-raised: var(--gray-darker);
+   --surface-overlay: var(--gray-dark);
+   --surface-elevated: var(--gray-default-dark);
 
-  /* Neutral / Gray surfaces for non-primary */
+   /* Neutral / Gray surfaces for non-primary */
    --surface-neutral:   var(--gray-darker);   /* default for secondary/ghost */
    --surface-neutral-hover:  var(--gray-dark); /* hover for secondary/ghost */
    --surface-neutral-active: var(--gray-light); /* pressed — keep light enough for black text */
 
-  /* Interactive */
-  --surface-interactive: var(--blue-default-dark);
-  --surface-interactive-hover: var(--blue-light);
-  --surface-interactive-active: var(--blue-lighter);
-  --surface-interactive-disabled: var(--gray-darker);
+   /* Interactive */
+   --surface-interactive: var(--blue-default-dark);
+   --surface-interactive-hover: var(--blue-light);
+   --surface-interactive-active: var(--blue-lighter);
+   --surface-interactive-disabled: var(--gray-darker);
 
-  /* States */
-  --surface-success: var(--emerald-darkest);
-  --surface-success-muted: var(--emerald-darker);
-  --surface-error: var(--red-darkest);
-  --surface-error-muted: var(--red-darker);
-  --surface-error-active: var(--red-default-dark);
-  --surface-warning: var(--amber-darkest);
-  --surface-warning-muted: var(--amber-darker);
-  --surface-info: var(--sky-darkest);
-  --surface-info-muted: var(--sky-darker);
+   /* States */
+   --surface-success: var(--emerald-darkest);
+   --surface-success-muted: var(--emerald-darker);
+   --surface-success-active: var(--emerald-default-dark);
+   --surface-error: var(--red-darkest);
+   --surface-error-muted: var(--red-darker);
+   --surface-error-active: var(--red-default-dark);
+   --surface-warning: var(--amber-darkest);
+   --surface-warning-muted: var(--amber-darker);
+   --surface-warning-active: var(--amber-default-dark);
+   --surface-info: var(--sky-darkest);
+   --surface-info-muted: var(--sky-darker);
+   --surface-info-active: var(--sky-default-dark);
+   --surface-feature: var(--gray-darker);
+   --surface-feature-muted: var(--gray-dark);
+   --surface-feature-active: var(--gray-light);
 
-  /* Inputs */
-  --surface-input: var(--gray-darker);
-  --surface-input-hover: var(--gray-dark);
-  --surface-input-focus: var(--gray-darkest);
-  --surface-input-disabled: var(--gray-darker);
+   /* Inputs */
+   --surface-input: var(--gray-darker);
+   --surface-input-hover: var(--gray-dark);
+   --surface-input-focus: var(--gray-darkest);
+   --surface-input-disabled: var(--gray-darker);
 
-  /* Special */
-  --surface-accent: var(--blue-default-dark);
-  --surface-inverse: var(--gray-lightest);
-  --surface-backdrop: rgba(0, 0, 0, 0.7);
+   /* Special */
+   --surface-accent: var(--blue-default-dark);
+   --surface-inverse: var(--gray-lightest);
+   --surface-backdrop: rgba(0, 0, 0, 0.7);
 
-  /* Base Text */
-  --text-primary: var(--gray-lighter);
-  --text-secondary: var(--gray-light);
-  --text-tertiary: var(--gray-default-light);
-  --text-muted: var(--gray-dark);
-  --text-disabled: var(--gray-dark);
+   /* Base Text */
+   --text-primary: var(--gray-lighter);
+   --text-secondary: var(--gray-light);
+   --text-tertiary: var(--gray-default-light);
+   --text-muted: var(--gray-dark);
+   --text-disabled: var(--gray-dark);
 
-  /* Interactive */
-  --text-interactive: var(--blue-default-dark);
-  --text-interactive-hover: var(--blue-light);
-  --text-interactive-active: var(--blue-lighter);
-  --text-interactive-visited: var(--blue-lighter);
+   /* Interactive */
+   --text-interactive: var(--blue-default-dark);
+   --text-interactive-hover: var(--blue-light);
+   --text-interactive-active: var(--blue-lighter);
+   --text-interactive-visited: var(--blue-lighter);
 
-  /* States */
-  --text-success: var(--emerald-light);
-  --text-error: var(--red-light);
-  --text-warning: var(--amber-light);
-  --text-info: var(--sky-light);
+   /* States */
+   --text-success: var(--emerald-light);
+   --text-error: var(--red-light);
+   --text-warning: var(--amber-light);
+   --text-info: var(--sky-light);
 
-  /* Special */
-  --text-inverse: var(--gray-darkest);
-  --text-on-color: var(--gray-darkest);
-  --text-accent: var(--blue-light);
-  --text-brand: var(--blue-default-dark);
+   /* Special */
+   --text-inverse: var(--gray-darkest);
+   --text-on-color: var(--gray-darkest);
+   --text-accent: var(--blue-light);
+   --text-brand: var(--blue-default-dark);
 
-  /* On Surfaces */
-  --text-on-surface: var(--gray-lighter);
-  --text-on-raised: var(--gray-lighter);
-  --text-on-interactive: var(--gray-darkest);
-  --text-on-success: var(--emerald-lighter);
-  --text-on-error: var(--red-lighter);
-  --text-on-warning: var(--amber-lighter);
-  --text-on-info: var(--sky-lighter);
+   /* On Surfaces */
+   --text-on-surface: var(--gray-lighter);
+   --text-on-raised: var(--gray-lighter);
+   --text-on-interactive: var(--gray-darkest);
+   --text-on-success: var(--emerald-lighter);
+   --text-on-error: var(--red-lighter);
+   --text-on-warning: var(--amber-lighter);
+   --text-on-info: var(--sky-lighter);
+   --text-on-feature: var(--gray-lighter);
 
-  /* Headings */
-  --text-heading: var(--gray-lightest);
-  --text-subheading: var(--gray-lighter);
+   /* Headings */
+   --text-heading: var(--gray-lightest);
+   --text-subheading: var(--gray-lighter);
 
-  /* Base Borders */
-  --border-default: var(--gray-dark);
-  --border-subtle: var(--gray-darker);
-  --border-strong: var(--gray-default-light);
-  --border-transparent: transparent;
+   /* Base Borders */
+   --border-default: var(--gray-dark);
+   --border-subtle: var(--gray-darker);
+   --border-strong: var(--gray-default-light);
+   --border-transparent: transparent;
 
-  /* Interactive */
-  --border-interactive: var(--blue-default-dark);
-  --border-interactive-hover: var(--blue-light);
-  --border-interactive-active: var(--blue-lighter);
-  --border-interactive-disabled: var(--gray-darker);
+   /* Interactive */
+   --border-interactive: var(--blue-default-dark);
+   --border-interactive-hover: var(--blue-light);
+   --border-interactive-active: var(--blue-lighter);
+   --border-interactive-disabled: var(--gray-darker);
 
-  /* States */
-  --border-success: var(--emerald-default-dark);
-  --border-error: var(--red-default-dark);
-  --border-warning: var(--amber-default-dark);
-  --border-info: var(--sky-default-dark);
+   /* States */
+   --border-success: var(--emerald-default-dark);
+   --border-error: var(--red-default-dark);
+   --border-warning: var(--amber-default-dark);
+   --border-info: var(--sky-default-dark);
 
-  /* Inputs */
-  --border-input: var(--gray-dark);
-  --border-input-hover: var(--gray-default-light);
-  --border-input-focus: var(--blue-default-dark);
-  --border-input-error: var(--red-default-dark);
-  --border-input-disabled: var(--gray-darker);
+   /* Inputs */
+   --border-input: var(--gray-dark);
+   --border-input-hover: var(--gray-default-light);
+   --border-input-focus: var(--blue-default-dark);
+   --border-input-error: var(--red-default-dark);
+   --border-input-disabled: var(--gray-darker);
 
-  /* Special */
-  --border-accent: var(--blue-default-dark);
-  --border-inverse: var(--gray-darkest);
-  --border-divider: var(--gray-darker);
+   /* Special */
+   --border-accent: var(--blue-default-dark);
+   --border-inverse: var(--gray-darkest);
+   --border-divider: var(--gray-darker);
 
-  /* Base Icons */
-  --icon-default: var(--gray-light);
-  --icon-subtle: var(--gray-dark);
-  --icon-strong: var(--gray-lighter);
-  --icon-muted: var(--gray-default-light);
+   /* Base Icons */
+   --icon-default: var(--gray-light);
+   --icon-subtle: var(--gray-dark);
+   --icon-strong: var(--gray-lighter);
+   --icon-muted: var(--gray-default-light);
 
-  /* Interactive */
-  --icon-interactive: var(--blue-default-dark);
-  --icon-interactive-hover: var(--blue-light);
-  --icon-interactive-active: var(--blue-lighter);
-  --icon-interactive-disabled: var(--gray-dark);
+   /* Interactive */
+   --icon-interactive: var(--blue-default-dark);
+   --icon-interactive-hover: var(--blue-light);
+   --icon-interactive-active: var(--blue-lighter);
+   --icon-interactive-disabled: var(--gray-dark);
 
-  /* States */
-  --icon-success: var(--emerald-default-dark);
-  --icon-error: var(--red-default-dark);
-  --icon-warning: var(--amber-default-dark);
-  --icon-info: var(--sky-default-dark);
+   /* States */
+   --icon-success: var(--emerald-default-dark);
+   --icon-error: var(--red-default-dark);
+   --icon-warning: var(--amber-default-dark);
+   --icon-info: var(--sky-default-dark);
 
-  /* Special */
-  --icon-accent: var(--blue-default-dark);
-  --icon-inverse: var(--gray-darkest);
-  --icon-on-color: var(--gray-darkest);
-  --icon-brand: var(--blue-default-dark);
+   /* Special */
+   --icon-accent: var(--blue-default-dark);
+   --icon-inverse: var(--gray-darkest);
+   --icon-on-color: var(--gray-darkest);
+   --icon-brand: var(--blue-default-dark);
 
-  /* On Surfaces */
-  --icon-on-surface: var(--gray-light);
-  --icon-on-raised: var(--gray-lighter);
-  --icon-on-interactive: var(--gray-darkest);
+   /* On Surfaces */
+   --icon-on-surface: var(--gray-light);
+   --icon-on-raised: var(--gray-lighter);
+   --icon-on-interactive: var(--gray-darkest);
 }
